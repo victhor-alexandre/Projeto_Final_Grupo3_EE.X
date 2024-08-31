@@ -207,11 +207,11 @@ void passo4() {
 
 void F_Temperatura(){
     Temp.Dado = ADC_GetConversion(8);
-    Temperatura[0] = bin2ascii((Temp.Dado/1000));
-    Temperatura[1] = bin2ascii((Temp.Dado/100)%10);
-    Temperatura[2] = bin2ascii((Temp.Dado/10)%10);
+    Temperatura[0] = (Temp.Dado/1000);
+    Temperatura[1] = (Temp.Dado/100)%10;
+    Temperatura[2] = (Temp.Dado/10)%10;
     Temperatura[3] = 0x2E;
-    Temperatura[4] = bin2ascii((Temp.Dado)%10);
+    Temperatura[4] = (Temp.Dado)%10;
     Temperatura[5] = 0x43;
     
  
