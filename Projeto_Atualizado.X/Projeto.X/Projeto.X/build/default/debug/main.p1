@@ -1,10 +1,10 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"59 ./main.h
-[; ;./main.h: 59:     struct{
+"61 ./main.h
+[; ;./main.h: 61:     struct{
 [s S360 `uc 1 `uc 1 ]
 [n S360 . b0 b1 ]
-"57
-[; ;./main.h: 57: union{
+"59
+[; ;./main.h: 59: union{
 [u S359 `us 1 `S360 1 ]
 [n S359 . Dado . ]
 [p mainexit ]
@@ -30,8 +30,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "428 ./mcc_generated_files/tmr1.h
 [; ;./mcc_generated_files/tmr1.h: 428: void TMR1_SetGateInterruptHandler(void (* InterruptHandler)(void));
 [v _TMR1_SetGateInterruptHandler `(v ~T0 @X0 0 ef1`*F2834 ]
-"109 ./main.h
-[; ;./main.h: 109: void Posicao_Bola_Tubo(void);
+"111 ./main.h
+[; ;./main.h: 111: void Posicao_Bola_Tubo(void);
 [v _Posicao_Bola_Tubo `(v ~T0 @X0 0 ef ]
 "54 /opt/microchip/mplabx/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8/pic/include/proc/pic16f1827.h
 [; ;/opt/microchip/mplabx/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8/pic/include/proc/pic16f1827.h: 54: __asm("INDF0 equ 00h");
@@ -508,10 +508,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;/opt/microchip/mplabx/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8/pic/include/proc/pic16f1827.h: 6748: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
 "42 ./main.h
-[; ;./main.h: 42: __eeprom float tabela_veloc_som[] = {28.36,34.74,40.11,44.84,49.12,
-[v _tabela_veloc_som `Ef ~T0 @X0 -> 49 `i e ]
+[; ;./main.h: 42: __eeprom float tabela_veloc_som[] = {0.00, 20.05, 28.36, 34.74, 40.11, 44.84
+[v _tabela_veloc_som `Ef ~T0 @X0 -> 51 `i e ]
 [i _tabela_veloc_som
 :U ..
+-> .0.00 `f
+-> .20.05 `f
 -> .28.36 `f
 -> .34.74 `f
 -> .40.11 `f
@@ -563,45 +565,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> .141.81 `f
 ..
 ]
-"50
-[; ;./main.h: 50: char Temperatura[5];
-[v _Temperatura `uc ~T0 @X0 -> 5 `i e ]
-"51
-[; ;./main.h: 51: char Posicao[4];
-[v _Posicao `uc ~T0 @X0 -> 4 `i e ]
 "52
-[; ;./main.h: 52: char BufferTX[13];
-[v _BufferTX `uc ~T0 @X0 -> 13 `i e ]
+[; ;./main.h: 52: char Temperatura[5];
+[v _Temperatura `uc ~T0 @X0 -> 5 `i e ]
 "53
-[; ;./main.h: 53: char BufferRX[5];
-[v _BufferRX `uc ~T0 @X0 -> 5 `i e ]
+[; ;./main.h: 53: char Posicao[4];
+[v _Posicao `uc ~T0 @X0 -> 4 `i e ]
 "54
-[; ;./main.h: 54: char DadosCh[3];
+[; ;./main.h: 54: char BufferTX[13];
+[v _BufferTX `uc ~T0 @X0 -> 13 `i e ]
+"55
+[; ;./main.h: 55: char BufferRX[5];
+[v _BufferRX `uc ~T0 @X0 -> 5 `i e ]
+"56
+[; ;./main.h: 56: char DadosCh[3];
 [v _DadosCh `uc ~T0 @X0 -> 3 `i e ]
-"63
-[; ;./main.h: 63: }Temp,D_mm,AuxRX;
+"65
+[; ;./main.h: 65: }Temp,D_mm,AuxRX;
 [v _Temp `S359 ~T0 @X0 1 e ]
 [v _D_mm `S359 ~T0 @X0 1 e ]
 [v _AuxRX `S359 ~T0 @X0 1 e ]
-"87
-[; ;./main.h: 87: uint16_t Tempo, passos, Est_atual;
+"89
+[; ;./main.h: 89: uint16_t Tempo, passos, Est_atual;
 [v _Tempo `us ~T0 @X0 1 e ]
 [v _passos `us ~T0 @X0 1 e ]
 [v _Est_atual `us ~T0 @X0 1 e ]
-"88
-[; ;./main.h: 88: uint8_t Cnt_RX;
+"90
+[; ;./main.h: 90: uint8_t Cnt_RX;
 [v _Cnt_RX `uc ~T0 @X0 1 e ]
-"91
-[; ;./main.h: 91: float v_som;
+"93
+[; ;./main.h: 93: float v_som;
 [v _v_som `f ~T0 @X0 1 e ]
-"92
-[; ;./main.h: 92: const float P_fosc = 0.000001;
+"94
+[; ;./main.h: 94: const float P_fosc = 0.000001;
 [v _P_fosc `Cf ~T0 @X0 1 e ]
 [i _P_fosc
 -> .0.000001 `f
 ]
-"93
-[; ;./main.h: 93: float tempo_s = 0;
+"95
+[; ;./main.h: 95: float tempo_s = 0;
 [v _tempo_s `f ~T0 @X0 1 e ]
 [i _tempo_s
 -> -> 0 `i `f

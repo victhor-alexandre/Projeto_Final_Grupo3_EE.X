@@ -31,7 +31,7 @@ cyc
 &
 ## ASYNCH
 Pin
-RB0
+T1G
 Pulse High
 2000 us
 

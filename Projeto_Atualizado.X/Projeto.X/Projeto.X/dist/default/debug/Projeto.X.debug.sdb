@@ -3,14 +3,14 @@
 [d edition pro ]
 [d chip 16F1827 ]
 [d frameptr 6 ]
-"85 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/adc.c
+"85 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/adc.c
 [e E2495 . `uc
 TEMP 8
 channel_Temp 29
 channel_DAC 30
 channel_FVR 31
 ]
-"10 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/functions.c
+"10 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/functions.c
 [e E2510 . `uc
 TEMP 8
 channel_Temp 29
@@ -35,21 +35,21 @@ channel_FVR 31
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "199
 [v ___eetofl __eetofl `(d  1 e 4 0 ]
-"16 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/functions.c
+"16 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/functions.c
 [v _Posicao_Bola_Tubo Posicao_Bola_Tubo `(v  1 e 1 0 ]
-"52 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/main.c
+"52 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"67 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/adc.c
+"67 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 "112
 [v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/cmp1.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/cmp1.c
 [v _CMP1_Initialize CMP1_Initialize `(v  1 e 1 0 ]
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/dac.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/dac.c
 [v _DAC_Initialize DAC_Initialize `(v  1 e 1 0 ]
-"64 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/epwm1.c
+"64 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/epwm1.c
 [v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
-"66 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/eusart.c
+"66 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 "144
 [v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
@@ -63,19 +63,19 @@ channel_FVR 31
 [v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/fvr.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/fvr.c
 [v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
-"52 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/interrupt_manager.c
+"52 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/mcc.c
+"50 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "68
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "78
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/pin_manager.c
+"55 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
+"64 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "108
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
@@ -85,7 +85,7 @@ channel_FVR 31
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 "144
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"65 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
+"65 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "109
 [v _TMR1_ReadTimer TMR1_ReadTimer `(us  1 e 2 0 ]
@@ -97,20 +97,20 @@ channel_FVR 31
 [v _TMR1_SetGateInterruptHandler TMR1_SetGateInterruptHandler `(v  1 e 1 0 ]
 "181
 [v _TMR1_DefaultGateInterruptHandler TMR1_DefaultGateInterruptHandler `(v  1 s 1 TMR1_DefaultGateInterruptHandler ]
-"62 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr2.c
+"62 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
-"62 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr4.c
+"62 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr4.c
 [v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
-"42 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/main.h
-[v _tabela_veloc_som tabela_veloc_som `VE[49]f  1 e 196 0 ]
+"42 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/main.h
+[v _tabela_veloc_som tabela_veloc_som `VE[51]f  1 e 204 0 ]
 [s S877 . 2 `uc 1 b0 1 0 `uc 1 b1 1 1 ]
-"63
+"65
 [u S880 . 2 `us 1 Dado 2 0 `S877 1 . 2 0 ]
 [v _Temp Temp `S880  1 e 2 0 ]
 [v _D_mm D_mm `S880  1 e 2 0 ]
-"91
-[v _v_som v_som `f  1 e 4 0 ]
 "93
+[v _v_som v_som `f  1 e 4 0 ]
+"95
 [v _tempo_s tempo_s `f  1 e 4 0 ]
 [s S219 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -439,7 +439,7 @@ channel_FVR 31
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/eusart.c
+"52 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/eusart.c
 [u S452 . 1 `S447 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusartRxLastError eusartRxLastError `VES452  1 e 1 0 ]
 "58
@@ -448,20 +448,20 @@ channel_FVR 31
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
 [v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
 "59
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
-"57 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
+"57 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_GateInterruptHandler TMR1_GateInterruptHandler `*.37(v  1 e 2 0 ]
-"52 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/main.c
+"52 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "81
 } 0
-"50 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/mcc.c
+"50 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "66
@@ -471,17 +471,17 @@ channel_FVR 31
 {
 "82
 } 0
-"62 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr4.c
+"62 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr4.c
 [v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"62 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr2.c
+"62 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"65 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
+"65 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "95
@@ -492,7 +492,7 @@ channel_FVR 31
 [v TMR1_SetGateInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "179
 } 0
-"64 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
+"64 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "85
@@ -503,22 +503,22 @@ channel_FVR 31
 [v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "142
 } 0
-"55 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/pin_manager.c
+"55 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "94
 } 0
-"68 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/mcc.c
+"68 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "76
 } 0
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/fvr.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/fvr.c
 [v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
 {
 "62
 } 0
-"66 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/eusart.c
+"66 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -541,42 +541,42 @@ channel_FVR 31
 [v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "167
 } 0
-"64 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/epwm1.c
+"64 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/epwm1.c
 [v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
 {
 "88
 } 0
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/dac.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/dac.c
 [v _DAC_Initialize DAC_Initialize `(v  1 e 1 0 ]
 {
 "64
 } 0
-"58 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/cmp1.c
+"58 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/cmp1.c
 [v _CMP1_Initialize CMP1_Initialize `(v  1 e 1 0 ]
 {
 "67
 } 0
-"67 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/adc.c
+"67 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
 "83
 } 0
-"52 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/interrupt_manager.c
+"52 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "74
 } 0
-"166 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
+"166 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
 [v _TMR1_GATE_ISR TMR1_GATE_ISR `(v  1 e 1 0 ]
 {
 "175
 } 0
-"16 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/functions.c
+"16 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/functions.c
 [v _Posicao_Bola_Tubo Posicao_Bola_Tubo `(v  1 e 1 0 ]
 {
-"23
+"22
 } 0
-"181 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
+"181 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
 [v _TMR1_DefaultGateInterruptHandler TMR1_DefaultGateInterruptHandler `(v  1 s 1 TMR1_DefaultGateInterruptHandler ]
 {
 "184
@@ -665,7 +665,7 @@ channel_FVR 31
 [v ___fldiv@b b `d  1 p 4 4 ]
 "185
 } 0
-"124 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
+"124 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr1.c
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
 {
 [v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
@@ -682,7 +682,7 @@ channel_FVR 31
 [v TMR1_ReadTimer@readValHigh readValHigh `uc  1 a 1 9 ]
 "122
 } 0
-"108 /home/julio/Downloads/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
+"108 /home/julio/Documentos/GitHub/Projeto_Final_Grupo3_EE.X/Projeto_Atualizado.X/Projeto.X/Projeto.X/mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "110
