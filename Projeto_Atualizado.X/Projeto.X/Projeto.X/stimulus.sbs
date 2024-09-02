@@ -31,7 +31,11 @@ cyc
 &
 ## ASYNCH
 Pin
+<<<<<<< HEAD
 T1G
+=======
+RB0
+>>>>>>> 2ad5bec33a971b468d2875604a7d78680d0c99b2
 Pulse High
 2000 us
 

@@ -60,6 +60,7 @@
 #include "tmr0.h"
 #include "fvr.h"
 #include "epwm1.h"
+#include "memory.h"
 #include "dac.h"
 #include "adc.h"
 #include "eusart.h"
