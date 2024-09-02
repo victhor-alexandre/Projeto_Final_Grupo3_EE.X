@@ -9,6 +9,12 @@
 // Cada interrupção, o controlador verifica se o motor já chegou na posição desejada, e se não, avança um único passo na direção em questão
 // Necessário 1 controle de direção, um contador, um booleano para inicializar o motor.
 
+void setPwm(uint16_t dutyValue){     //recebe o valor do pwm
+    static uint16_t pwm;
+    pwm = dutyValue;
+    EPWM1_LoadDutyValue(pwm);
+}
+
 void interrupt_MotorDePasso(void){      //ativado a cada 5ms
     static uint16_t posicaoValvulaReset = MAX_PASSO;       //essa variável será decrementada e enviada ao motor de passo, até que ele desative o sensor
     if(resetPasso){     //se o reset estiver habilitado (resetPasso = 1))
@@ -45,23 +51,49 @@ void Passo(uint16_t posicaoAtual, uint16_t posicaoDesejada){
     }
     
     switch(i){
-        case 0:
+        case 3:
             SM1_SetHigh();
             SM2_SetHigh();
             break;
-        case 1:
+        case 2:
             SM2_SetHigh();
             SM3_SetHigh();
             break;
-        case 2:
+        case 1:
             SM3_SetHigh();
             SM4_SetHigh();
             break;
-        case 3:
+        case 0:
             SM4_SetHigh();
             SM1_SetHigh();
             break;
     }
     
+}
+
+
+// rotina de controle
+// Modelo PI (proporcional-integrador)
+// Deve controlar ou o pwm, ou o motor de passo
+// faz parte da máquina de estados. Ou seja, deve ser bypassed quando um dos modos de controle estiver inativo
+
+void calcularErro(void){
+    Erro = Setpoint - Distancia;        //Erro(k) = sp(K) - y(K)
+}
+
+void calcularSaidaControlador(void){
+    SaidaControlador = (float)(sinal*Kc)*((Erro - Erro_1)+(T/Ti)*((Erro+Erro_1)/2)) + (float)(SaidaAnterior);
+    
+    //limitando a saída
+    if(SaidaControlador < 0.0){
+        SaidaControlador = 0.0;
+    }else if(SaidaControlador > limite){
+        SaidaControlador = limite;
+    }
+}
+
+void guardarValoresDoControlador(void){
+    Erro_1 = Erro;
+    SaidaAnterior = SaidaControlador;
 }
 
