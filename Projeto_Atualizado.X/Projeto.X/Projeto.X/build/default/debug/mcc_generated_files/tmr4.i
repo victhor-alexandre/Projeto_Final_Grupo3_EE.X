@@ -4339,12 +4339,11 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 51 "mcc_generated_files/tmr4.c" 2
-
+# 52 "mcc_generated_files/tmr4.c" 2
 # 1 "mcc_generated_files/tmr4.h" 1
 # 55 "mcc_generated_files/tmr4.h"
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
-# 55 "mcc_generated_files/tmr4.h" 2
+# 56 "mcc_generated_files/tmr4.h" 2
 # 103 "mcc_generated_files/tmr4.h"
 void TMR4_Initialize(void);
 # 132 "mcc_generated_files/tmr4.h"
@@ -4359,7 +4358,7 @@ void TMR4_WriteTimer(uint8_t timerVal);
 void TMR4_LoadPeriodRegister(uint8_t periodVal);
 # 325 "mcc_generated_files/tmr4.h"
 _Bool TMR4_HasOverflowOccured(void);
-# 52 "mcc_generated_files/tmr4.c" 2
+# 53 "mcc_generated_files/tmr4.c" 2
 # 62 "mcc_generated_files/tmr4.c"
 void TMR4_Initialize(void)
 {

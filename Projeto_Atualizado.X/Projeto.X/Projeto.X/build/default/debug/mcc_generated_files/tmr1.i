@@ -4339,12 +4339,11 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 51 "mcc_generated_files/tmr1.c" 2
-
+# 52 "mcc_generated_files/tmr1.c" 2
 # 1 "mcc_generated_files/tmr1.h" 1
 # 54 "mcc_generated_files/tmr1.h"
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
-# 54 "mcc_generated_files/tmr1.h" 2
+# 55 "mcc_generated_files/tmr1.h" 2
 # 100 "mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
 # 129 "mcc_generated_files/tmr1.h"
@@ -4367,8 +4366,7 @@ _Bool TMR1_HasOverflowOccured(void);
 void TMR1_GATE_ISR(void);
 # 428 "mcc_generated_files/tmr1.h"
 void TMR1_SetGateInterruptHandler(void (* InterruptHandler)(void));
-# 52 "mcc_generated_files/tmr1.c" 2
-
+# 53 "mcc_generated_files/tmr1.c" 2
 
 
 

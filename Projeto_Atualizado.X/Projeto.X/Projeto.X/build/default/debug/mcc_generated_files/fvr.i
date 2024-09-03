@@ -4339,18 +4339,16 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 51 "mcc_generated_files/fvr.c" 2
-
+# 52 "mcc_generated_files/fvr.c" 2
 # 1 "mcc_generated_files/fvr.h" 1
 # 54 "mcc_generated_files/fvr.h"
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
-# 54 "mcc_generated_files/fvr.h" 2
+# 55 "mcc_generated_files/fvr.h" 2
 # 93 "mcc_generated_files/fvr.h"
  void FVR_Initialize(void);
 # 127 "mcc_generated_files/fvr.h"
 _Bool FVR_IsOutputReady(void);
-# 52 "mcc_generated_files/fvr.c" 2
-
+# 53 "mcc_generated_files/fvr.c" 2
 
 
 

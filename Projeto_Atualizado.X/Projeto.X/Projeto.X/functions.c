@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "mcc_generated_files/tmr1.h"
 #include "mcc_generated_files/adc.h"
 #include "mcc_generated_files/eusart.h"
@@ -22,7 +21,6 @@ void Posicao_Bola_Tubo(){
     TMR1_WriteTimer(0);
 }
 
-=======
 #include "mcc_generated_files/tmr1.h"
 #include "mcc_generated_files/adc.h"
 #include "mcc_generated_files/eusart.h"
@@ -47,4 +45,3 @@ void Posicao_Bola_Tubo(){
     TMR1_WriteTimer(0);
 }
 
->>>>>>> 2ad5bec33a971b468d2875604a7d78680d0c99b2

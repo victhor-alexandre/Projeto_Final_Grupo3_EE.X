@@ -10,8 +10,7 @@
 # 1 "./mcc_generated_files/tmr1.h" 1
 # 54 "./mcc_generated_files/tmr1.h"
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
-# 54 "./mcc_generated_files/tmr1.h" 2
-
+# 55 "./mcc_generated_files/tmr1.h" 2
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdint.h" 1 3
 
 
@@ -117,7 +116,7 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 149 "/opt/microchip/xc8/v2.46/pic/include/c99/stdint.h" 2 3
-# 55 "./mcc_generated_files/tmr1.h" 2
+# 56 "./mcc_generated_files/tmr1.h" 2
 # 100 "./mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
 # 129 "./mcc_generated_files/tmr1.h"
@@ -4378,7 +4377,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 54 "./mcc_generated_files/adc.h" 2
+# 55 "./mcc_generated_files/adc.h" 2
 # 72 "./mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
 
@@ -4448,7 +4447,7 @@ void EUSART_SetErrorHandler(void (* interruptHandler)(void));
 # 3 "functions.c" 2
 
 # 1 "./main.h" 1
-# 42 "./main.h"
+# 40 "./main.h"
 __eeprom float tabela_veloc_som[] = {0.00, 20.05, 28.36, 34.74, 40.11, 44.84
 ,49.12, 53.06, 56.72, 60.16, 63.42, 66.51, 69.47, 72.31, 75.04
 , 77.67, 80.22, 82.69, 85.09, 87.42, 89.69, 91.90, 94.07
@@ -4473,7 +4472,7 @@ union{
         uint8_t b1;
     };
 }Temp,D_mm,AuxRX;
-# 77 "./main.h"
+# 75 "./main.h"
 typedef union{
     uint16_t v16;
     uint8_t v8[2];
@@ -4493,7 +4492,7 @@ uint8_t Cnt_RX;
 float v_som;
 const float P_fosc = 0.000001;
 float tempo_s = 0;
-# 104 "./main.h"
+# 102 "./main.h"
 void Temperatura_e_VelocidadeSom();
 
 
@@ -4514,14 +4513,117 @@ void Interrupcao();
 
 
 uint8_t bin2ascii(uint8_t vBin);
-# 135 "./main.h"
+# 133 "./main.h"
 void RX_Dado();
 
 
 
 
 void TX_Dado();
-# 150 "./main.h"
+# 148 "./main.h"
+void passo1();
+
+
+
+
+void passo2();
+
+
+
+
+void passo3();
+
+
+
+
+void passo4();
+
+
+
+
+void AntiHorario();
+
+
+
+
+void Horario();
+
+
+
+
+void Analisa_RX();
+# 221 "./main.h"
+__eeprom float tabela_veloc_som[] = {28.36,34.74,40.11,44.84,49.12,
+53.06,56.72,60.16,63.42,66.51,69.47,72.31,75.04,77.67,80.22,
+82.69,85.09,87.42,89.69,91.90,94.07,96.18,98.25,100.27,
+102.26,104.21,106.12,108.00,109.84,111.66,113.45,115.21,
+116.94,118.65,120.33,121.99,123.63,125.24,126.84,128.41,
+129.97,131.51,133.03,134.53,136.02,137.49,138.94,140.38,141.81};
+
+
+char Temperatura[5];
+char Posicao[4];
+char BufferTX[13];
+char BufferRX[5];
+char DadosCh[3];
+
+
+union{
+    uint16_t Dado;
+    struct{
+        uint8_t b0;
+        uint8_t b1;
+    };
+}Temp,D_mm,AuxRX;
+# 254 "./main.h"
+typedef union{
+    uint16_t v16;
+    uint8_t v8[2];
+    struct{
+        uint8_t n0 : 4;
+        uint8_t n1 : 4;
+        uint8_t n2 : 4;
+        uint8_t n3 : 4;
+    };
+}uint16_u;
+
+
+uint16_t Tempo, passos, Est_atual;
+uint8_t Cnt_RX;
+
+
+float v_som;
+const float P_fosc = 0.000001;
+float tempo_s = 0;
+# 281 "./main.h"
+void Temperatura_e_VelocidadeSom();
+
+
+
+
+
+
+void Posicao_Bola_Tubo(void);
+
+
+
+
+void Interrupcao();
+
+
+
+
+
+
+uint8_t bin2ascii(uint8_t vBin);
+# 312 "./main.h"
+void RX_Dado();
+
+
+
+
+void TX_Dado();
+# 327 "./main.h"
 void passo1();
 
 
@@ -4571,5 +4673,137 @@ void Posicao_Bola_Tubo(){
     tempo_s = TMR1_ReadTimer() * P_fosc;
 
     D_mm.Dado = (uint16_t)(v_som * (tempo_s / 2)*1000);
+    TMR1_WriteTimer(0);
+}
+
+
+
+
+
+# 1 "./main.h" 1
+# 40 "./main.h"
+__eeprom float tabela_veloc_som[] = {0.00, 20.05, 28.36, 34.74, 40.11, 44.84
+,49.12, 53.06, 56.72, 60.16, 63.42, 66.51, 69.47, 72.31, 75.04
+, 77.67, 80.22, 82.69, 85.09, 87.42, 89.69, 91.90, 94.07
+, 96.18, 98.25, 100.27, 102.26, 104.21, 106.12, 108.00
+, 109.84, 111.66, 113.45, 115.21, 116.94, 118.65, 120.33
+, 121.99, 123.63, 125.24, 126.84, 128.41, 129.97, 131.51
+, 133.03 , 134.53, 136.02, 137.49, 138.94, 140.38, 141.81
+};
+
+
+char Temperatura[5];
+char Posicao[4];
+char BufferTX[13];
+char BufferRX[5];
+char DadosCh[3];
+
+
+union{
+    uint16_t Dado;
+    struct{
+        uint8_t b0;
+        uint8_t b1;
+    };
+}Temp,D_mm,AuxRX;
+# 75 "./main.h"
+typedef union{
+    uint16_t v16;
+    uint8_t v8[2];
+    struct{
+        uint8_t n0 : 4;
+        uint8_t n1 : 4;
+        uint8_t n2 : 4;
+        uint8_t n3 : 4;
+    };
+}uint16_u;
+
+
+uint16_t Tempo, passos, Est_atual;
+uint8_t Cnt_RX;
+
+
+float v_som;
+const float P_fosc = 0.000001;
+float tempo_s = 0;
+# 102 "./main.h"
+void Temperatura_e_VelocidadeSom();
+
+
+
+
+
+
+void Posicao_Bola_Tubo(void);
+
+
+
+
+void Interrupcao();
+
+
+
+
+
+
+uint8_t bin2ascii(uint8_t vBin);
+# 133 "./main.h"
+void RX_Dado();
+
+
+
+
+void TX_Dado();
+# 148 "./main.h"
+void passo1();
+
+
+
+
+void passo2();
+
+
+
+
+void passo3();
+
+
+
+
+void passo4();
+
+
+
+
+void AntiHorario();
+
+
+
+
+void Horario();
+
+
+
+
+void Analisa_RX();
+# 27 "functions.c" 2
+
+
+
+void Temperatura_e_VelocidadeSom(){
+
+
+    Temp.Dado = (uint16_t)(ADC_GetConversion(8) * 0.0468) + 275;
+
+    v_som = tabela_veloc_som[Temp.Dado - 2];
+
+}
+
+void Posicao_Bola_Tubo(){
+
+    tempo_s = TMR1_ReadTimer() * P_fosc;
+
+    D_mm.Dado = (uint16_t)(v_som * (tempo_s / 2)*1000);
+    TMR1_WriteTimer(0);
     TMR1_WriteTimer(0);
 }

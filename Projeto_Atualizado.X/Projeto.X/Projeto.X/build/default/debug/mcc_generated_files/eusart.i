@@ -4341,10 +4341,9 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 54 "mcc_generated_files/eusart.h" 2
-
-# 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
 # 55 "mcc_generated_files/eusart.h" 2
+# 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
+# 56 "mcc_generated_files/eusart.h" 2
 # 75 "mcc_generated_files/eusart.h"
 typedef union {
     struct {
@@ -4375,8 +4374,7 @@ void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 50 "mcc_generated_files/eusart.c" 2
-
+# 51 "mcc_generated_files/eusart.c" 2
 
 volatile eusart_status_t eusartRxLastError;
 

@@ -4341,13 +4341,12 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 54 "mcc_generated_files/pin_manager.h" 2
+# 55 "mcc_generated_files/pin_manager.h" 2
 # 235 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 # 247 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 49 "mcc_generated_files/pin_manager.c" 2
-
+# 50 "mcc_generated_files/pin_manager.c" 2
 
 
 

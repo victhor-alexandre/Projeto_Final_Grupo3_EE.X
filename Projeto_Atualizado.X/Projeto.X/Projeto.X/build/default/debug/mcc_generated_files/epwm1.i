@@ -4339,14 +4339,13 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 51 "mcc_generated_files/epwm1.c" 2
-
+# 52 "mcc_generated_files/epwm1.c" 2
 # 1 "mcc_generated_files/epwm1.h" 1
 # 96 "mcc_generated_files/epwm1.h"
 void EPWM1_Initialize(void);
 # 122 "mcc_generated_files/epwm1.h"
 void EPWM1_LoadDutyValue(uint16_t dutyValue);
-# 52 "mcc_generated_files/epwm1.c" 2
+# 53 "mcc_generated_files/epwm1.c" 2
 # 64 "mcc_generated_files/epwm1.c"
 void EPWM1_Initialize(void)
 {

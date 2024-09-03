@@ -4341,22 +4341,18 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/device_config.h" 1
 # 50 "./mcc_generated_files/mcc.h" 2
-
+# 1 "./mcc_generated_files/device_config.h" 1
+# 51 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/pin_manager.h" 1
 # 235 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 # 247 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
+# 52 "./mcc_generated_files/mcc.h" 2
 
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
+# 54 "./mcc_generated_files/mcc.h" 2
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/conio.h" 1 3
 
 
@@ -4517,11 +4513,9 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 8 "/opt/microchip/xc8/v2.46/pic/include/c99/conio.h" 2 3
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
 # 55 "./mcc_generated_files/mcc.h" 2
-
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 56 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr4.h" 1
 # 103 "./mcc_generated_files/tmr4.h"
 void TMR4_Initialize(void);
@@ -4537,8 +4531,7 @@ void TMR4_WriteTimer(uint8_t timerVal);
 void TMR4_LoadPeriodRegister(uint8_t periodVal);
 # 325 "./mcc_generated_files/tmr4.h"
 _Bool TMR4_HasOverflowOccured(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-
+# 57 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr1.h" 1
 # 100 "./mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
@@ -4562,8 +4555,7 @@ _Bool TMR1_HasOverflowOccured(void);
 void TMR1_GATE_ISR(void);
 # 428 "./mcc_generated_files/tmr1.h"
 void TMR1_SetGateInterruptHandler(void (* InterruptHandler)(void));
-# 57 "./mcc_generated_files/mcc.h" 2
-
+# 58 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr2.h" 1
 # 103 "./mcc_generated_files/tmr2.h"
 void TMR2_Initialize(void);
@@ -4579,15 +4571,13 @@ void TMR2_WriteTimer(uint8_t timerVal);
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
 # 325 "./mcc_generated_files/tmr2.h"
 _Bool TMR2_HasOverflowOccured(void);
-# 58 "./mcc_generated_files/mcc.h" 2
-
+# 59 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/cmp1.h" 1
 # 92 "./mcc_generated_files/cmp1.h"
 void CMP1_Initialize(void);
 # 132 "./mcc_generated_files/cmp1.h"
 _Bool CMP1_GetOutputStatus(void);
-# 59 "./mcc_generated_files/mcc.h" 2
-
+# 60 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/tmr0.h" 1
 # 104 "./mcc_generated_files/tmr0.h"
 void TMR0_Initialize(void);
@@ -4607,22 +4597,33 @@ void TMR0_CallBack(void);
 extern void (*TMR0_InterruptHandler)(void);
 # 297 "./mcc_generated_files/tmr0.h"
 void TMR0_DefaultInterruptHandler(void);
-# 60 "./mcc_generated_files/mcc.h" 2
-
+# 61 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/fvr.h" 1
 # 93 "./mcc_generated_files/fvr.h"
  void FVR_Initialize(void);
 # 127 "./mcc_generated_files/fvr.h"
 _Bool FVR_IsOutputReady(void);
-# 61 "./mcc_generated_files/mcc.h" 2
-
+# 62 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/epwm1.h" 1
 # 96 "./mcc_generated_files/epwm1.h"
 void EPWM1_Initialize(void);
 # 122 "./mcc_generated_files/epwm1.h"
 void EPWM1_LoadDutyValue(uint16_t dutyValue);
-# 62 "./mcc_generated_files/mcc.h" 2
-
+# 63 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/memory.h" 1
+# 99 "./mcc_generated_files/memory.h"
+uint16_t FLASH_ReadWord(uint16_t flashAddr);
+# 128 "./mcc_generated_files/memory.h"
+void FLASH_WriteWord(uint16_t flashAddr, uint16_t *ramBuf, uint16_t word);
+# 164 "./mcc_generated_files/memory.h"
+int8_t FLASH_WriteBlock(uint16_t writeAddr, uint16_t *flashWordArray);
+# 189 "./mcc_generated_files/memory.h"
+void FLASH_EraseBlock(uint16_t startAddr);
+# 220 "./mcc_generated_files/memory.h"
+void DATAEE_WriteByte(uint8_t bAdd, uint8_t bData);
+# 246 "./mcc_generated_files/memory.h"
+uint8_t DATAEE_ReadByte(uint8_t bAdd);
+# 64 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/dac.h" 1
 # 93 "./mcc_generated_files/dac.h"
 void DAC_Initialize(void);
@@ -4630,8 +4631,7 @@ void DAC_Initialize(void);
 void DAC_SetOutput(uint8_t inputData);
 # 163 "./mcc_generated_files/dac.h"
 uint8_t DAC_GetOutput(void);
-# 63 "./mcc_generated_files/mcc.h" 2
-
+# 65 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/adc.h" 1
 # 72 "./mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
@@ -4666,8 +4666,7 @@ adc_result_t ADC_GetConversionResult(void);
 adc_result_t ADC_GetConversion(adc_channel_t channel);
 # 316 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 64 "./mcc_generated_files/mcc.h" 2
-
+# 66 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/eusart.h" 1
 # 75 "./mcc_generated_files/eusart.h"
 typedef union {
@@ -4699,17 +4698,16 @@ void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "./mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 65 "./mcc_generated_files/mcc.h" 2
-# 80 "./mcc_generated_files/mcc.h"
+# 67 "./mcc_generated_files/mcc.h" 2
+# 81 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 93 "./mcc_generated_files/mcc.h"
+# 94 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 105 "./mcc_generated_files/mcc.h"
+# 106 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 44 "main.c" 2
-
+# 45 "main.c" 2
 # 1 "./main.h" 1
-# 42 "./main.h"
+# 40 "./main.h"
 __eeprom float tabela_veloc_som[] = {0.00, 20.05, 28.36, 34.74, 40.11, 44.84
 ,49.12, 53.06, 56.72, 60.16, 63.42, 66.51, 69.47, 72.31, 75.04
 , 77.67, 80.22, 82.69, 85.09, 87.42, 89.69, 91.90, 94.07
@@ -4734,7 +4732,7 @@ union{
         uint8_t b1;
     };
 }Temp,D_mm,AuxRX;
-# 77 "./main.h"
+# 75 "./main.h"
 typedef union{
     uint16_t v16;
     uint8_t v8[2];
@@ -4754,7 +4752,7 @@ uint8_t Cnt_RX;
 float v_som;
 const float P_fosc = 0.000001;
 float tempo_s = 0;
-# 104 "./main.h"
+# 102 "./main.h"
 void Temperatura_e_VelocidadeSom();
 
 
@@ -4775,14 +4773,14 @@ void Interrupcao();
 
 
 uint8_t bin2ascii(uint8_t vBin);
-# 135 "./main.h"
+# 133 "./main.h"
 void RX_Dado();
 
 
 
 
 void TX_Dado();
-# 150 "./main.h"
+# 148 "./main.h"
 void passo1();
 
 
@@ -4814,8 +4812,110 @@ void Horario();
 
 
 void Analisa_RX();
-# 45 "main.c" 2
+# 221 "./main.h"
+__eeprom float tabela_veloc_som[] = {28.36,34.74,40.11,44.84,49.12,
+53.06,56.72,60.16,63.42,66.51,69.47,72.31,75.04,77.67,80.22,
+82.69,85.09,87.42,89.69,91.90,94.07,96.18,98.25,100.27,
+102.26,104.21,106.12,108.00,109.84,111.66,113.45,115.21,
+116.94,118.65,120.33,121.99,123.63,125.24,126.84,128.41,
+129.97,131.51,133.03,134.53,136.02,137.49,138.94,140.38,141.81};
 
+
+char Temperatura[5];
+char Posicao[4];
+char BufferTX[13];
+char BufferRX[5];
+char DadosCh[3];
+
+
+union{
+    uint16_t Dado;
+    struct{
+        uint8_t b0;
+        uint8_t b1;
+    };
+}Temp,D_mm,AuxRX;
+# 254 "./main.h"
+typedef union{
+    uint16_t v16;
+    uint8_t v8[2];
+    struct{
+        uint8_t n0 : 4;
+        uint8_t n1 : 4;
+        uint8_t n2 : 4;
+        uint8_t n3 : 4;
+    };
+}uint16_u;
+
+
+uint16_t Tempo, passos, Est_atual;
+uint8_t Cnt_RX;
+
+
+float v_som;
+const float P_fosc = 0.000001;
+float tempo_s = 0;
+# 281 "./main.h"
+void Temperatura_e_VelocidadeSom();
+
+
+
+
+
+
+void Posicao_Bola_Tubo(void);
+
+
+
+
+void Interrupcao();
+
+
+
+
+
+
+uint8_t bin2ascii(uint8_t vBin);
+# 312 "./main.h"
+void RX_Dado();
+
+
+
+
+void TX_Dado();
+# 327 "./main.h"
+void passo1();
+
+
+
+
+void passo2();
+
+
+
+
+void passo3();
+
+
+
+
+void passo4();
+
+
+
+
+void AntiHorario();
+
+
+
+
+void Horario();
+
+
+
+
+void Analisa_RX();
+# 46 "main.c" 2
 
 
 

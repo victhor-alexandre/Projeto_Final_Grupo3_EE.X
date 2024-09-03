@@ -11,6 +11,7 @@ mcc_generated_files/cmp1.h  \
 mcc_generated_files/tmr0.h  \
 mcc_generated_files/fvr.h  \
 mcc_generated_files/epwm1.h  \
+mcc_generated_files/memory.h  \
 mcc_generated_files/dac.h  \
 mcc_generated_files/adc.h  \
 mcc_generated_files/eusart.h 

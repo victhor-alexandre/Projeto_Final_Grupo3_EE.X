@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Microchip Technology Inc. and its subsidiaries.  You may use this software 
  * and any derivatives exclusively with Microchip products. 
  * 
@@ -30,8 +29,6 @@
 // This is a guard condition so that contents of this file are not included
 // more than once.  
 //------------------------------------------------------------------------------------------------------------------------------------------------------
-#ifndef XC_HEADER_TEMPLATE_H
-#define	XC_HEADER_TEMPLATE_H
 #include <xc.h> // include processor files - each processor file is guarded.
 
 #define INI_Q      '$'
@@ -180,7 +177,6 @@ void Horario();
  */
 void Analisa_RX();
 
-=======
 /* Microchip Technology Inc. and its subsidiaries.  You may use this software 
  * and any derivatives exclusively with Microchip products. 
  * 
@@ -360,5 +356,4 @@ void Horario();
  */
 void Analisa_RX();
 
->>>>>>> 2ad5bec33a971b468d2875604a7d78680d0c99b2
 #endif	/* XC_HEADER_TEMPLATE_H */

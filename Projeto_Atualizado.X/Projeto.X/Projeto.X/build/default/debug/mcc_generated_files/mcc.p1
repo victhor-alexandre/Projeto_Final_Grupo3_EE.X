@@ -2,11 +2,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "235 mcc_generated_files/pin_manager.h
 [; ;mcc_generated_files/pin_manager.h: 235: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"93 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 93: void OSCILLATOR_Initialize(void);
+"94 mcc_generated_files/mcc.h
+[; ;mcc_generated_files/mcc.h: 94: void OSCILLATOR_Initialize(void);
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"105
-[; ;mcc_generated_files/mcc.h: 105: void WDT_Initialize(void);
+"106
+[; ;mcc_generated_files/mcc.h: 106: void WDT_Initialize(void);
 [v _WDT_Initialize `(v ~T0 @X0 0 ef ]
 "93 mcc_generated_files/fvr.h
 [; ;mcc_generated_files/fvr.h: 93:  void FVR_Initialize(void);

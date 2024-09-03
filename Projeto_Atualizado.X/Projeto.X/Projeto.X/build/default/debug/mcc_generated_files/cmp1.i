@@ -4339,18 +4339,16 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/opt/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 52 "mcc_generated_files/cmp1.c" 2
-
+# 53 "mcc_generated_files/cmp1.c" 2
 # 1 "mcc_generated_files/cmp1.h" 1
 # 54 "mcc_generated_files/cmp1.h"
 # 1 "/opt/microchip/xc8/v2.46/pic/include/c99/stdbool.h" 1 3
-# 54 "mcc_generated_files/cmp1.h" 2
+# 55 "mcc_generated_files/cmp1.h" 2
 # 92 "mcc_generated_files/cmp1.h"
 void CMP1_Initialize(void);
 # 132 "mcc_generated_files/cmp1.h"
 _Bool CMP1_GetOutputStatus(void);
-# 53 "mcc_generated_files/cmp1.c" 2
-
+# 54 "mcc_generated_files/cmp1.c" 2
 
 
 
